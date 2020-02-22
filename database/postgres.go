@@ -12,10 +12,10 @@ import (
 // DBConn returns a postgres connection pool.
 func DBConn() (*pg.DB, error) {
 	viper.SetDefault("db_network", "tcp")
-	viper.SetDefault("db_addr", "localhost:5432")
-	viper.SetDefault("db_user", "postgres")
-	viper.SetDefault("db_password", "postgres")
-	viper.SetDefault("db_database", "gobase")
+	viper.SetDefault("db_addr", "35.226.27.240:5432")
+	viper.SetDefault("db_user", "go")
+	viper.SetDefault("db_password", "xCHR8PWDVsHvdmvH")
+	viper.SetDefault("db_database", "go-api")
 
 	db := pg.Connect(&pg.Options{
 		Network:  viper.GetString("db_network"),
